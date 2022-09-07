@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn html and css in 2022 cutie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="hero-img"> </div>
+    <div class="wrapper" >
+        <Header>
+            <a href="#" class="logo"> 
+                Shoe<span>Brand</span></a>
+            <nav>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+                
+            </nav>
+            <svg class="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30"style=" fill:#000000;">
+                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+           </svg>
+        </Header>
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+            <p class="subhead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate sit nesciunt alias, dolorum consectetur.</p>
+            <svg class="down-arrow" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+        </section>
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, iusto.</p>
+                    
+                </div>
+                <img src="/images/shoe1.jpg" alt="white shoe">
+            </div>
+            <div class="feature">
+                <img src="/images/shoe3.jpg" alt="white shoe">
+                <div class="content">
+                    
+                    <p class="title">Lightweight</p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, iusto.</p>
+                    
+                </div>
+                
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, iusto.</p>
+                    
+                </div>
+                <img src="/images/shoe3.jpg" alt="white shoe">
+            </div>
+            
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
